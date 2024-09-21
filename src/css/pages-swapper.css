@@ -1,0 +1,73 @@
+.pages-swapper{
+    height: 255px;
+    width: 100vw;
+    display: flex;
+    justify-content: stretch;
+}
+
+.pages-swapper > a{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding-right: 8vw;
+    flex: 1 0 0;
+    border: 1px solid #0082BA;
+    cursor: pointer;
+    background-color: #F2F6FB;
+}
+
+.pages-swapper > a + a{
+    align-items: start;
+    padding-left: 8vw;
+    padding-right: 0;
+}
+
+.pages-swapper > .img-link{
+    background-image: url("../../lib/img/DSC_2874\ 1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.pages-swapper > a > p{
+    font-size: 15px;
+    color: #46494E;
+    margin: 0;
+    margin-top: auto;
+}
+
+.pages-swapper > a > h3{
+    margin-bottom: auto;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #0082BA;
+}
+
+.pages-swapper > a:nth-child(1) > h3{
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+
+    .pages-swapper{
+        height: 155px;
+        width: 100vw;
+        display: flex;
+        justify-content: stretch;
+    }
+
+    .pages-swapper > a > h3{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .pages-swapper > a > p{
+        margin-bottom: auto;
+    }
+
+    .pages-swapper > a > h3{
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+
+.content-header{
+    width: 100vw;
+}
+
+
+@media (max-width: 767px) {
+    .nav-wrapper{
+        background-color: #0082BA !important;
+    }
+
+}
+
+@media (max-width: 479px) {
+    #brand-details-header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .top-header{
+        width: fit-content;
+    }
+
+    .brand-details-link{
+        margin-top: 20px;
+        display: inline-block;
+        width: fit-content;
+        margin-left: 0px;
+    }
+
+    #brand-details-header > svg{
+        display: none;
+    }
+}

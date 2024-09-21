@@ -1,0 +1,347 @@
+:root{
+    --padding-cnt: 268px;
+}
+
+.header{
+    font-size: 50px;
+    font-weight: 700;
+    color: #46494E;
+    margin-bottom: 30px;
+}
+
+.info-slide{
+    height: 670px;
+    background-color: #F2F6FB;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    padding: 0 var(--padding-cnt);
+}
+
+.info-slide > .label{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 30px;
+}
+
+.info-slide > .label > h3{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.info-slide > .links{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.info-slide > .links > h3{
+    font-weight: 700;
+    margin-top: 50px;
+    font-size: 18px;
+    width: 600px;
+}
+
+.connect-btn{
+    display: flex;
+    background-color: #0082BA;
+    text-decoration: none;
+    width: fit-content;
+    cursor: pointer;
+    height: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-top: 40px;
+}
+
+.connect-btn:hover{
+    background-color: #00587C;
+    color: #fff;
+}
+
+.info-slide > .departments{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.department-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.department-card{
+    flex: 1 0 0;
+    padding: 10px;
+}
+
+.department-card > h4{
+    color:#0082BA;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.department-card > p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.department-card > a{
+    display: block;
+    color: #0082BA;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.form-slide{
+    padding: 100px var(--padding-cnt) 0 var(--padding-cnt);
+    height: 660px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
+
+.form-slide > .header{
+    max-width: 676px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.form-slide > .form-cnt{
+    width: 440px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cnt input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #242B3733;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.form-cnt .connect-btn{
+    margin-top: 0;
+    width: 200px;
+}
+
+.form-agreement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-agreement > p{
+    margin-left: 10px;
+}
+
+@media (max-width: 1680px) {
+    :root{
+        --padding-cnt: 112px;
+    }
+
+    .form-slide > .header{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1440px) {
+    :root{
+        --padding-cnt: 24px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .info-slide{
+        margin-top: 30px;
+    }
+
+    .info-slide{
+        height: fit-content;
+        background-color: #F2F6FB;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 30% 70%;
+        grid-row-gap: 50px;
+        padding: 0 var(--padding-cnt);
+    }
+
+    .info-slide > .label > h3{
+        margin-top: 0px;
+        font-size: 18px;
+    }
+
+    .info-slide > .links > h3{
+        font-weight: 700;
+        margin-top: 30px;
+        font-size: 18px;
+        width: 600px;
+    }
+
+    .info-slide > .departments > h3{
+        font-size: 40px;
+    }
+
+    .form-slide{
+        height: fit-content;
+        padding: 60px var(--padding-cnt);
+    }
+
+    .info-slide > .links > h3{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .links > h3{
+        width: 100%;
+    }
+
+    .info-slide{
+        padding-top: 100px;
+        margin-top: 20px;
+    }
+
+    .info-slide > .links > h3{
+        width: auto;
+    }
+
+    .department-list{
+        flex-direction: column;
+    }
+
+    .form-slide{
+        grid-template-columns: 100%;
+        grid-template-rows: (2, auto);
+        grid-row-gap: 20px;
+    }
+
+    .form-slide > .header{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .form-slide > .form-cnt{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .info-slide{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, min-content);
+        grid-row-gap: 0;
+
+    }
+
+    .info-slide > .label{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .info-slide > .links{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .info-slide > .departments{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .info-slide > .departments{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .form-cnt .connect-btn{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .info-slide{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .header-slide{
+        padding-top: 117px ;
+    }
+
+
+    .info-slide > .departments > h3{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+
+    .department-card{
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .department-card > h4{
+        font-size: 20px;
+    }
+
+    .form-slide{
+        column-gap: 0;
+    }
+
+    .form-slide > .header{
+        font-size: 25px;
+        margin: 0;
+    }
+
+}
+
+@media(max-width: 480px){
+    .form-cnt{
+        width: 100% !important;
+    }
+
+    .form-cnt > input{
+        width: 100%;
+    }
+}

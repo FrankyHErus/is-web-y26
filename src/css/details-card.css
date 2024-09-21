@@ -1,0 +1,139 @@
+
+.details-list__card{
+    position: relative;
+    background-color: #FFF;
+    height: 100%;
+    width: 330px;
+    flex: 1 1 0px;
+}
+
+.details-list__card + .details-list__card{
+    margin-left: 2rem;
+    flex: 1 1 0px;
+}
+
+.details-list__card > h3{
+    color: #46494E;
+    margin: 30px 30px 0px 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.details-list__card > .details-list__content{
+    position: absolute;
+    bottom: 30px;
+    margin: 0 30px;
+}
+
+.details-list__card > .details-list__content > img{
+    width: 100%;
+    margin-bottom: 6px;
+    height: auto;
+}
+
+.details-list__card > .details-list__content > p{
+    font-size: 15px;
+    color: #46494E;
+    margin: 0;
+}
+
+.details-list__label-card{
+    background-color: #0082BA;
+}
+
+.details-list__label-card > h3{
+    color: #fff;
+}
+
+.details-list__label-card > .label-card__subtitle{
+    margin-left: 30px;
+    font-weight: 700;
+    color: #FFFFFF66;
+}
+
+
+@media (max-width: 1919px) {
+    .details-list__card{
+        width: 280px;
+    }
+
+}
+
+@media (max-width: 1279px){
+
+    .details-list__card{
+        margin-left: 1px;
+    }
+
+    .details-list__card > h3{
+        margin-left: 20px;
+    }
+
+    .details-list__card > .details-list__content{
+        position: initial;
+    }
+
+    .details-list__card > .details-list__content > p{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .details-list__card > .details-list__content > img{
+        height: 75px;
+        width: auto;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+
+    .details-list__label-card > h3{
+        display: inline-block;
+        width: fit-content;
+        margin-right: 5px;
+    }
+
+    .details-list__label-card > .label-card__subtitle{
+        display: inline-block;
+        width: fit-content;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 479px) {
+    .details-list__card{
+        height: fit-content;
+    }
+
+    .details-list__card > h3{
+        font-size: 15px;
+        width: calc(100% - 125px);
+        min-height: 100px;
+        height: fit-content;
+    }
+
+    .details-list__card > .label-card__btn {
+        font-size: 15px;
+        padding: 0 20px;
+        width: fit-content;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .details-list__label-card{
+        height: unset;
+        min-height: 0;
+    }
+    
+    .details-list__label-card > h3{
+        height: fit-content;
+        display: inline-block;
+        width: fit-content;
+        margin-right: 0;
+        min-height: 0;
+    }
+    
+    .details-list__label-card > .label-card__subtitle{
+        display: inline-block;
+    }   
+}
