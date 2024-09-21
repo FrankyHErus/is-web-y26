@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Главная</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../lib/bootstrap-5.0.2-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/404.css">
+    </head>
+    <body>
+        <main>
+            <div class="content">
+                <div class="row">
+                    <div class="headers">
+                        <div>
+                            <h3>Страница<br />не найдена</h3>
+                            <h1>404</h1>
+                        </div>
+                        <a>
+                            <p>Перейти на главную</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="nav-wrapper" class="nav-wrapper">
+            <nav class="navbar navbar-expand-lg">
+                <div class="header-logo"><img src="../../lib/img/Logo.png"></div>
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline border-bottom border-white search-form">
+                        <button class="search-submit" type="submit" value="">
+                            <svg width='25' height='25' style="vertical-align: top;">
+                                <circle cx='11.5' cy='11.5' r='9.5' stroke='#F2F6FB' stroke-width='1' fill="none"/>
+                                <line x1='17.9' y1='19' x2='21.5' y2='22.85' stroke-linecap="round" style='stroke:#F2F6FB;stroke-width:1;'/>
+                            </svg>
+                        </button>
+                        <input class="search-input" type="search" placeholder="Поиск по модели автомобиля, описанию или размерам запасной части" aria-label="Search">
+                    </form>
+
+                    <ul class="navbar-nav" id="nav-wide">
+                        <li class="nav-item dropdown" id="link-1">
+                            <a class="dropdown-toggle">
+                                <span>Бренд<span>
+                            </a>
+                            <div class="dropdown-wrapper" id="wrap-1">
+                                <div class="dropdown-menu" id="list-1">
+                                    <a class="dropdown-link" href="#">О компании</a>
+                                    <a class="dropdown-link" href="#">Тесты</a>
+                                    <a class="dropdown-link" href="#">Новинки</a>
+                                    <a class="dropdown-link" href="#">Новости</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" id="link-2">
+                            <a class="dropdown-toggle" aria-expanded="false">
+                                <span>Продукция</span>
+                            </a>
+                            <div class="dropdown-wrapper" id="wrap-2">
+                                <div class="dropdown-menu" id="list-2">
+                                    <a class="dropdown-link" href="#">Системы</a>
+                                    <a class="dropdown-link" href="#">Торговое оборудование</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown" id="link-3">
+                            <a class="dropdown-toggle" aria-expanded="false">
+                                <span>Гарантия</span>
+                            </a>
+                            <div class="dropdown-wrapper" id="wrap-3">
+                                <div class="dropdown-menu" id="list-3">
+                                    <a class="dropdown-link" href="#">Гарантия</a>
+                                    <a class="dropdown-link" href="#">Качество</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="" href="#">
+                                <span>Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a id="nav-narrow-btn">
+                    <span>Меню</span>
+                    <svg width='25' height='25' style="vertical-align: top;">
+                        <line x1='0' y1='4' x2='25' y2='4' stroke-linecap="round" style='stroke:#F2F6FB;stroke-width:2;'/>
+                        <line x1='0' y1='11' x2='25' y2='11' stroke-linecap="round" style='stroke:#F2F6FB;stroke-width:2;'/>
+                        <line x1='0' y1='18' x2='25' y2='18' stroke-linecap="round" style='stroke:#F2F6FB;stroke-width:2;'/>
+                    </svg>
+                </a>
+
+                <a class="catalog-btn ml-auto" href="./catalog.html">
+                    Каталог
+                </a>
+
+                <div class="radio">
+                    <div class="select" id="sel-5" def-val="RU">
+                        <p>RU</p>
+                        <svg height="21" width="21">
+                            <polygon stroke-linecap="round" points="7,7 10.5,11 14,7" style="fill: #F2F6FB; stroke:#F2F6FB;stroke-width:2;" />
+                        </svg>
+                        <div class="options" id="opt-5">
+                            <ul>
+                                <li value="RU">RU</li>
+                                <li value="EN">EN</li>
+                                <li value="DE">DE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="narrow-nav">
+            <div class="header-wrapper">
+                <div class="narrow-header">
+                    <img src="../../lib/img/Logo_mini.png">
+                    <a id="narrow-close-btn">
+                        <svg width='40' height='40' style="vertical-align: top;">
+                            <line x1='12' y1='12' x2='28' y2='28' stroke-linecap="round" style='stroke:#F2F6FB;stroke-width:2;'/>
+                            <line x1='12' y1='28' x2='28' y2='12' stroke-linecap="round" style='stroke:#F2F6FB;stroke-width:2;'/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="narrow-lang">
+                    <div class="select" id="sel-6" def-val="RU">
+                        <p>RU</p>
+                        <svg height="21" width="21">
+                            <polygon stroke-linecap="round" points="7,7 10.5,11 14,7" style="fill: #00587C; stroke:#00587C;stroke-width:2;" />
+                        </svg>
+                        <div class="options" id="opt-6">
+                            <ul>
+                                <li value="RU">RU</li>
+                                <li value="EN">EN</li>
+                                <li value="DE">DE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li class="narrow-label">Бренд</li>
+                <li class="narrow-link"><a href="#">О компании</a></li>
+                <li class="narrow-link"><a href="#">Тесты</a></li>
+                <li class="narrow-link"><a href="#">Новинки</a></li>
+                <li class="narrow-link"><a href="#">Новости</a></li>
+            </ul>
+            <ul>
+                <li class="narrow-label">Продукция</li>
+                <li class="narrow-link" ><a href="#">Системы</a></li>
+                <li class="narrow-link" ><a href="#">Торговое оборудование</a></li>
+            </ul>
+            <ul>
+                <li class="narrow-label">Гарантия</li>
+                <li class="narrow-link" ><a href="#">Гарантия</a></li>
+                <li class="narrow-link" ><a href="#">Качество</a></li>
+            </ul>
+            <ul>
+                <li class="narrow-link"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </body>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/car-radio.js"></script>
+    <script src="../js/details-slider.js"></script>
+    <script src="../js/nav.js"></script>
+</html>

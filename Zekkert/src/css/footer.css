@@ -1,0 +1,240 @@
+@import url("../../lib/Zekkert_display_font/font/ZekkertFont.css");
+
+.footer-wrapper{
+    width: 100vw;
+    background: #00587C;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer > div{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+.footer-logo{
+    margin-top: 3.6px;
+    width: 268px;
+}
+
+.footer-logo > img{
+    margin-left: 32px;
+    height: 28px;
+}
+
+.footer-contacts > ul{
+    width: 204px;
+    padding-left: 0;
+}
+
+.footer-contacts > ul > li{
+    list-style-type: none;
+    color: #fff;
+}
+.footer-contacts > ul > li + li{
+    margin-top: 10px;
+}
+
+.footer-contacts > ul > li > a{
+    color: #59CBE8;
+}
+
+.footer-social{
+    display: flex;
+    width: 172px;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-social > a{
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+.footer-social > a > svg{
+    fill: #F2F6FB;
+}
+
+.footer-social > a:hover > svg{
+    fill: #59CBE8;
+}
+
+.footer-copyright{
+    margin: 70px 0 30px 0;
+    width: 100vw;
+    color: #fff;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0 0 250px;
+}
+
+.footer-copyright > p{
+    font-size: 12px;
+}
+
+
+.footer-copyright > p > a{
+    font-size: 12px;
+    text-decoration: none;
+    color:#fff;
+}
+
+.footer-copyright > p > a:hover{
+    font-size: 12px;
+    text-decoration: none;
+    color:#59CBE8;
+}
+
+.footer-copyright > p + p{
+    margin-left: calc(50vw - 253.3px - 250px);
+}
+
+.footer-copyright > p + p > a + a{
+    margin-left: calc(210px - 123px);
+}
+
+.footer-copyright > p + p + p{
+    margin-left: 32px;
+}
+
+.right-nav-footer{
+    margin-left: 32px;
+}
+
+.left-nav-footer > ul,  .right-nav-footer > ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.left-nav-footer > ul > li > a,  .right-nav-footer > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.left-nav-footer > ul > li > a:hover,  .right-nav-footer > ul > li > a:hover{
+    color: #59CBE8;
+    text-decoration: none;
+}
+
+@media (min-width: 1920px) {
+    .footer-wrapper{
+        padding: 0 calc((100vw - 1920px)/2);
+    }
+}
+
+@media(max-width: 1279px){
+    .footer > div {
+        padding-top: 50px;
+    }
+}
+
+@media(max-width: 1023px){
+    .footer > div{
+        flex-direction: column;
+    }
+
+    .footer > div + div{
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .footer-contacts > ul {
+        margin-top: 20px;
+        margin-left: 32px;
+    }
+
+    .footer-social{
+        margin-left: 32px;
+    }
+
+    .footer-copyright{
+        margin: 70px 0 30px 0;
+        width: 100vw;
+        color: #fff;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 0 0 32px;
+    }
+
+    .footer-copyright > p + p{
+        margin-left: calc(50vw - 253.3px - 32px);
+    }
+
+    .left-nav-footer > ul > li, .right-nav-footer > ul > li{
+        margin-top: 20px !important;
+    }
+}
+
+@media(max-width: 767px){
+    .footer > div + div{
+        flex-direction: column;
+    }
+
+    .footer-copyright{
+        flex-direction: column;
+    }
+
+    .footer-copyright > p + p{
+        margin: 0;
+    }
+
+    .footer-copyright > p + p > a + a{
+        margin-left: 10px;
+    }
+
+    .right-nav-footer{
+        margin-left: 0;
+    }
+    
+    .left-nav-footer, .right-nav-footer{
+        height: fit-content;
+    }
+
+    .left-nav-footer > ul > li, .right-nav-footer > ul > li{
+        margin-top: 6px !important;
+    }
+}
+
+@media (max-width: 479px){
+
+    .footer > div {
+        padding-top: 20px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer > div + div{
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 32px;
+    }
+
+    .footer-copyright{
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .footer-copyright > p, .footer-copyright > p + p{
+        width: fit-content;
+    }
+}
+

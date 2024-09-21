@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Zekkert';
+    src: local('Zekkert L'), local('Zekkert-Light'),
+        url('./ZekkertDisplay-Light.woff') format('woff'),
+        url('./ZekkertDisplay-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Zekkert';
+    src: local('Zekkert R'), local('Zekkert-Regular'),
+        url('./ZekkertDisplay-Regular.woff') format('woff'),
+        url('./ZekkertDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zekkert';
+    src: local('Zekkert B'), local('Zekkert-Bold'),
+        url('./ZekkertDisplay-Bold.woff') format('woff'),
+        url('./ZekkertDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Zekkert';
+    src: local('Zekkert H'), local('Zekkert-Heavy'),
+        url('./ZekkertDisplay-Heavy.woff') format('woff'),
+        url('./ZekkertDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: bolder;
+}

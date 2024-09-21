@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main{
+    margin-top: 0;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../lib/img/1920/deva-darshan-2XUfjLp7HYY-unsplash\ 2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.content > .row{
+    position: absolute;
+    top: calc(35%);
+    left: 0;
+    right: 0;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content > .row > div{
+    width: 800px;
+    color: #ffffff99;
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content > .row > .headers{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+
+.content > .row > .headers::before, .content > .row > .headers::after{
+    font-size: 170px;
+    content: "It works \A for all";
+    white-space: pre;
+    position: absolute;
+    right: 100%;
+    width: max-content;
+    overflow: hidden;
+    line-height: 100%;
+}
+
+.content > .row > .headers::after{
+    left: 100%;
+}
+
+.content > .row > .headers > a{
+    display: flex;
+    width: 180px;
+    height: 180px;
+    margin-top: auto;
+    margin-bottom: 32px;
+    background-color: #0082BA;
+    margin-left: 32px;
+}
+
+.content > .row > .headers > a > p{
+    margin: auto 2rem;
+    width: fit-content;
+    font-weight: 400;
+}
+
+.content > .row > .headers > div{
+    width: 400px;
+}
+
+
+.content > .row > .headers > div > h3{
+    text-transform: lowercase;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+.content > .row > .headers > div > h1{
+    font-size: 210px;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media(max-width: 1919px){
+    .content > .row > .headers > div > h1{
+        font-size: 150px;
+    }
+
+    .content > .row > .headers > div{
+        width: 384px;
+    }
+
+    .content > .row > .headers::before, .content > .row > .headers::after{
+        font-size: 150px;
+    }
+}
+
+@media(max-width: 1439px){
+
+    .content > .row > .headers > div{
+        width: 280px;
+    }
+
+    .content > .row > .headers > div > h3{
+        font-size: 40px;
+    }
+
+    .content > .row > .headers > div > h1{
+        font-size: 110px;
+    }
+
+    .content > .row > .headers::before, .content > .row > .headers::after{
+        font-size: 110px;
+    }
+}
+
+@media(max-width: 1279px){
+    .content > .row > .headers > a{
+        width: 144px;
+        height: 144px;
+    }
+
+    .content > .row > .headers > a > p{
+        font-size: 13px;
+    }
+
+    .content > .row > .headers::after{
+        left: 70%;
+    }
+}
+
+@media(max-width: 767px){
+    .content > .row > .headers > div > h3{
+        font-size: 25px;
+    }
+
+    .content > .row > .headers > div > h1{
+        font-size: 70px;
+    }
+
+    .content > .row > .headers{
+        flex-direction: column;
+        margin-left: 32px;
+    }
+
+    .content > .row > .headers > a{
+        margin-left: 0;
+    }
+
+    .content > .row > .headers::before, .content > .row > .headers::after{
+        font-size: 70px;
+    }
+
+    .content > .row > .headers::after{
+        left: auto;
+        bottom: 0;
+        right: 25%;
+    }
+
+    .header-logo{
+        content: url('../../lib/img/Logo_mini_wh.png');
+    }
+
+}
