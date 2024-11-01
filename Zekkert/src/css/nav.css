@@ -11,6 +11,10 @@
     margin-left: auto;
 }
 
+.active-link{
+    border-bottom: 1px solid #00587C !important;
+}
+
 .nav-wrapper{
     width: 100vw;
     height: 90px;

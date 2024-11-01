@@ -12,8 +12,6 @@ window.addEventListener("scroll", () => {
 window.addEventListener("load", () => {
     document.querySelectorAll(".cnt__header").forEach((el) => {
         const offset = el.getAttribute("data-offset-anim")
-        console.log(window.scrollY + window.innerHeight);
-        console.log(el.getBoundingClientRect().top + offset);
         if(window.scrollY + window.innerHeight < el.getBoundingClientRect().top + parseInt(offset, 10)){
             el.classList.add("header__hidden");
         }else{

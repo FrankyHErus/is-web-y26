@@ -27,6 +27,10 @@ window.addEventListener("load", () => {
         document.getElementsByClassName("search-input")[0].setAttribute("placeholder", "Поиск по модели автомобиля")
     }
 
+    let pathname = document.location.pathname
+    pathname = pathname.substring(pathname.lastIndexOf('/') + 1)
+    document.querySelectorAll(`[href='./${pathname}']`).forEach(x => x.classList.add('active-link'))
+
 })
 
 window.addEventListener("resize", () => {
