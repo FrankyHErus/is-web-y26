@@ -1,0 +1,156 @@
+:root{
+    --padding-cnt: 268px;
+    --width-of-card: 320px;
+    --cards-gap: 32px;
+}
+
+.systems-info-slide{
+    padding: 55px var(--padding-cnt);
+    background-color: #F2F6FB;
+}
+
+.little-info-slide{
+    font-size: 20px;
+    margin-left: auto;
+    width: 50%;
+    font-weight: bold;
+}
+
+.list-header{
+    width: 70%;
+    margin-top: 85px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #46494E;
+}
+
+.systems-slider{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--cards-gap);
+}
+
+.details-list__card{
+    padding: 35px;
+    width: 320px;
+    flex: none;
+}
+
+.details-list__card + .details-list__card{
+    margin-left: 0;
+    flex: none;
+}
+
+.details-list__card > h3{
+    width: fit-content;
+    margin: 0;
+}
+
+.details-list__card > .details-list__content{
+    position: unset;
+    margin: 90px 0 0 0;
+    padding: 0;
+}
+.details-list__card > .details-list__content > img{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1919px){
+    :root{
+    --padding-cnt: 232px;
+}
+    .details-list__card{
+        width: 280px;
+    }
+}
+
+@media (max-width: 1679px){
+    :root{
+    --padding-cnt: 112px;
+    }
+}
+
+@media(max-width: 1439px){
+    :root{
+        --padding-cnt: 32px;
+    }
+
+    .details-list__card{
+        width: calc(25% - 3 * var(--cards-gap) / 4);
+    }
+}
+
+@media (max-width: 1279px){
+
+    .list-header{
+        font-size: 40px;
+    }
+
+    .details-list__card{
+        margin: 0;
+        width: calc(50% - 16px);
+    }
+
+    .details-list__card > h3{
+        width: calc(100% - 100px);
+    }
+
+    .details-list__card > .details-list__content > img{
+        height: 75px;
+        width: auto;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+}
+
+@media (max-width: 1023px){
+
+    .header-slide > h1{
+        font-size: 55px;
+    }
+
+    .little-info-slide{
+        width: 100%;
+        margin: 0 0 0 0;
+        font-size: 15px;
+    }
+
+    .list-header{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header-slide{
+        height: auto;
+        margin: 0;
+        padding: 0 var(--padding-cnt);
+    }
+
+    .header-slide > h1{
+        font-size: 30px;
+    }
+
+    .systems-info-slide{
+        padding-top: 30px;
+    }
+
+    .list-header{
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .details-list__card{
+        padding: 20px;
+        margin: 0;
+        width: calc(100%);
+        height: 160px;
+    }
+}

@@ -1,0 +1,163 @@
+.content{
+    margin-top: 100px;
+    height: fit-content;
+}
+
+h2{
+    color: #00587C;
+}
+
+.img-cnt{
+    display: flex;
+}
+
+.info-slide{
+    height: fit-content;
+}
+
+.guarantee-list-cnt{
+    margin-bottom: 100px;
+}
+
+.guarantee-list-cnt > ul[title]::before{
+    content: attr(title);
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.guarantee-list-cnt > ul > li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.guarantee-list-cnt > ul > li::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #0082BA;
+    margin-right: 20px;
+}
+
+.news__slider{
+    display: none;
+}
+
+.slider__card > img{
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.news-content{
+    padding: 10px;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.banner{
+    padding: 0;
+    width: calc(100%);
+    height: 590px;
+    background-color: black;
+    background-image: url("../../lib/img/systems_banner.png");
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.img-cnt{
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .banner{
+        display: none;
+    }
+
+    .content{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-cnt{
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+
+    .img-cnt > {
+        width: auto;
+    }
+
+    .guarantee-list-cnt{
+        width: auto;
+    }
+
+    .img-cnt{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-cnt > img{
+        margin: 10px 0;
+        width: 30vw;
+    }
+
+    .news-content{
+        padding: 0;
+    }
+
+    .guarantee-list-cnt > ul{
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 767px){
+    .news-content{
+        display: block;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .img-cnt{
+        display: none;
+    }
+
+    .img-cnt > img{
+        display: none;
+    }
+
+    .slider__btns{
+        display: flex;
+    }
+
+    .slider__card{
+        height: fit-content;
+    }
+
+    .details-list__slider-header{
+        display: block;
+        height: fit-content;
+    }
+
+    .spinner-list{
+        flex-direction: row;
+    }
+
+    .news__slider{
+        display: block;
+    }
+}

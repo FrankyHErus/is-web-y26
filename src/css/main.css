@@ -1,0 +1,552 @@
+:root{
+    --padding-cnt: 268px;
+}
+
+.margin-0{
+    margin: 0 !important;
+}
+
+.flex-1{
+    flex: 1 1 0 !important;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
+.footer-wrapper{
+    flex: 0 0 auto;
+}
+
+.header-slide{
+    position: relative;
+    height: 220px;
+    margin-top: 90px;
+    padding: 0 var(--padding-cnt);
+    padding-top: 117px;
+}
+
+.header-slide > a{
+    margin-bottom: 30px;
+}
+
+.header-slide > h1{
+    font-size: 75px;
+    font-weight: 700;
+    color: #00587C;
+    display: block;
+    text-transform: uppercase;
+}
+
+
+.content-header{
+    position: relative;
+    height: 475px;
+    width: fit-content;
+    background-color: #0082BA;
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+}
+
+.content-header > span{
+    text-transform: uppercase;
+    font-family: 'Zekkert';
+    font-weight: bold;
+    display: block;
+    margin: auto 0;
+    color: #fff;
+    font-size: 75px;
+    width: max-content;
+    position: relative;
+    left: 100vw;
+    transition: all 0.5s;
+}
+
+.content-header > img{
+    margin: auto 32px;
+    height: 220px;
+    box-shadow: 0px 0px 40px -4px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    position: relative;
+    left: 100vw;
+    transform: rotateZ(360deg);
+    transition: all 0.5s;
+    /*cursor: pointer;*/
+}
+
+/*.content-header > img:hover{
+    animation: rotateDisk 0.5s infinite linear forwards;
+}*/
+
+.content-header > ul{
+    width: calc(100vw - 64px);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 32px;
+}
+
+
+.content-header > ul > li{
+    flex: 1;
+    display: block;
+    height: 100%;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.content-header > ul > li{
+    flex: 1;
+    display: block;
+    height: 100%;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.content-header > ul > li > a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 15px;
+    transition: all 0.3s;
+}
+
+.content-header > ul > li > a:hover{
+    color: #0082BA;
+    background: #fff;
+}
+
+.active-nav{
+    color: #0082BA !important;
+    background: #fff;
+}
+
+.radio-form{
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    background: #F2F6FB;
+    margin: 40px 32px 0 32px;
+    width: fit-content;
+}
+
+.radio-btn{
+    display: flex;
+    height: 35px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.radio-btn > div{
+    display: flex;
+}
+
+.radio-btn > div + div{
+    margin-left: 5px;
+}
+
+.radio-btn > svg{
+    fill: #0082BA;
+    margin-right: 5px;
+}
+
+.selected-btn{
+    background-color: #0082BA;
+    color: #fff !important;
+}
+
+.selected-btn > svg{
+    fill: #fff;
+}
+
+.sort-div{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.sort-div > .select{
+    display: block;
+    width: 30vw;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(36, 43, 55, 0.2);
+    border-radius: 8px;
+    appearance: none;
+    background-image: url("../../lib/img/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    margin-right: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+.select > .options{
+    z-index: 1;
+    position: absolute;
+    width: 30vw;
+    max-height: 0px;
+    overflow-y: auto;
+    margin-left: -16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 8px 0px rgba(34, 60, 80, 1);
+    transition: max-height 0.3s;
+}
+
+.options > ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.options > ul > li{
+    display: block;
+    border-bottom: 1px solid #0082BA66;
+    padding: 16px;
+}
+
+.options > ul > li:hover{
+    background-color: #0082BA26;
+}
+
+.select:hover > .options{
+    max-height: 150px;
+}
+
+.select > p{
+    color: #46494E;
+    margin: 0;
+}
+
+.sort-div > .disabled-sel{
+    border: 1px solid #E0E6EE;
+    background-image: url("../../lib/img/arrow_down_dis.svg");
+}
+
+.sort-div > .disabled-sel > p{
+    color: #E0E6EE;
+}
+
+.sort-div > .disabled-sel > .options{
+    max-height: 0px;
+}
+
+.top-header{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #0082BA
+}
+
+#brand-details-header{
+    display: flex;
+    margin: 40px 0px 20px 32px;
+}
+
+#brand-details-header > h3{
+    margin: 0;
+    line-height: 100%;
+    text-align: end;
+}
+
+.brand-details-link{
+    margin-left: calc(100% - 328.2px);
+    color: #0082BA;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #0082BA;
+    margin-top: auto;
+}
+
+#brand-details-header > svg{
+    margin-top: auto;
+}
+
+#brand-details-list{
+    width: fit-content;
+    column-count: 3;
+    column-gap: 32px;
+    margin: 0 0 100px 32px;
+}
+
+#brand-details-list > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#brand-details-list > ul > li{
+    width: 204px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #46494E;
+}
+
+#brand-details-list > ul > li + li{
+    margin-top: 10px;
+}
+
+.sort-nav{
+    display: none;
+}
+
+@keyframes rotateDisk {
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@media (min-width: 1920px) {
+    .content-header{
+        padding: 0 0 0 calc((100vw - 1920px)/2 + 250px);
+    }
+}
+
+@media (max-width: 1679px){
+    :root{
+        --padding-cnt: 112px;
+    }
+
+    .top-header{
+        font-size: 25px;
+        color: #0082BA
+    }
+
+    .brand-details-link{
+        margin-left: calc(100% - 293.2px);
+    }
+}
+
+@media (max-width: 1440px) {
+    :root{
+        --padding-cnt: 24px;
+    }
+    
+    .content-header{
+        padding-left: 32px;
+    }
+}
+
+@media(max-width: 1280px){
+    .content-header{
+        padding-left: 24px;
+    }
+    .content-header > span{
+        font-size: 65px;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .content-header > ul > li > a{
+        padding: 15px 5px;
+        font-size: 13px;
+    }
+    .content-header > span{
+        font-size: 55px;
+    }
+
+    #brand-details-list > ul > li{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 767px){
+
+    .sort-div{
+        flex-wrap: wrap;
+    }
+
+    .sort-div > .select{
+        margin: 0;
+        width: calc(50% - 31px);
+        margin-bottom: 11px;
+    }
+
+    .sort-div > .select + .select{
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    .sort-div > .select:last-child{
+        margin: 0;
+        width: calc(100% - 32px);
+    }
+
+    .radio-form > .radio-btn:first-child{
+        flex-grow: 1;
+    }
+
+    .radio-form > .radio-btn:last-child > p{
+        width: fit-content;
+    }
+
+    .header-slide{
+        padding-top: 185px;
+        margin-top: -100px;
+    }
+
+    .header-slide > h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px){
+
+    #opt-4{
+        left: -100%;
+        top: 80%;
+    }
+
+    #sel-4 > svg{
+        margin-top: 6px ;
+    }
+
+    #opt-4 > ul > li{
+        width: 100%;
+    }
+
+    .sort-nav{
+        display: flex;
+    }
+
+    .radio-form{
+        width: calc(100% - 64px);
+    }
+
+    .radio-btn{
+        flex-shrink: 1;
+        flex: 1 0 0;
+    }
+
+    main{
+        margin-top: 90px;
+    }
+
+    .name-shrink > .radio-btn{
+        flex: none;
+        flex-grow: 0 !important;
+        width: auto;
+    }
+
+
+    .name-shrink > .radio-btn:last-child{
+        margin-left: auto;
+    }
+
+    .content-header{
+        display: none;
+    }
+
+    .name-shrink > .radio-btn:last-child > p{
+        display: none;
+    }
+
+    .name-shrink > .radio-btn:last-child::after{
+        content: "LCV транспорт";
+    }
+
+    .radio-form > .select{
+        position: relative;
+        color: #000;
+    }
+
+    .radio-form > .select > .options{
+        color: #000;
+        z-index: 1;
+        width: fit-content;
+    }
+
+    .radio-form > .select > .options > ul{
+        width: fit-content;
+    }
+
+    .radio-form > .select > .options > ul > li{
+        width: fit-content;
+    }
+
+    #brand-details-list{
+        width: fit-content;
+        column-count: 2;
+        column-gap: 20px;
+        margin: 0 0 50px 32px;
+    }
+}
+
+@media(max-width: 479px){
+
+    .name-shrink > .radio-btn:first-child > p{
+        display: none;
+    }
+
+    .name-shrink > .radio-btn:first-child::after{
+        content: "Легковой авто";
+    }
+
+    .radio-form{
+        width: calc(100% - 64px);
+    }
+
+    .name-shrink > .radio-btn > svg{
+        display: none;
+    }
+
+    .sort-div > .select{
+        margin: 0 0 5px 0 !important;
+        width: calc(100% - 32px);
+        margin-bottom: 11px;
+    }
+
+    .sort-div > .select + .select{
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    
+    .sort-div > .select:last-child{
+        margin: 0;
+        display: block;
+    }
+
+    .sort-nav > div + div{
+        display: none;
+    }
+
+    .sort-nav > div:last-child{
+        display: block;
+        flex-grow: 2 !important;
+    }
+
+    #opt-4{
+        left: 0;
+    }
+
+    #sel-4 > svg{
+        margin-top: 0px ;
+    }
+
+    #brand-details-list{
+        width: fit-content;
+        column-count: 1;
+    }
+    
+}
