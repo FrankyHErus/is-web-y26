@@ -1,0 +1,32 @@
+.todo-result{
+    padding: 2vw;
+    margin: 3vw;
+    border: 1px solid #0082BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-form{
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.todo-card{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px 5px;
+}
+
+.todo-card > .todo-title{
+    margin: 0 auto;
+}
+
+.todo-result > h1{
+    color: #00000033
+}
