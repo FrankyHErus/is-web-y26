@@ -1,26 +1,48 @@
 function displayLocalStorageValues(){
     const cnt = document.getElementById('todo-result__container')
     let json_todo = JSON.parse(localStorage.getItem("todo_list"));
+
+    while (cnt.firstChild) {
+        cnt.removeChild(cnt.lastChild);
+    }
+
     if(json_todo && json_todo.length != 0){
-        let content = ""
         let counter = 0;
         json_todo.forEach(element => {
             counter++;
-            content += `
-            <div id="${element.id}" class="todo-card">
-                <div class="todo-id">${counter}</div>
-                <div class="todo-title">${element.input_name}</div>
-                <div class="todo-deadline">${element.input_deadline}</div>
-            </div>`
+
+            let todocard = document.createElement("div")
+            todocard.setAttribute('id', element.id)
+            todocard.setAttribute('class', 'todo-card')
+
+            let id_el = document.createElement("div")
+            id_el.setAttribute('class', 'todo-id')
+            id_el.textContent = counter
+
+            let title_el = document.createElement("div")
+            title_el.setAttribute('class', 'todo-title')
+            title_el.textContent = element.input_name
+
+            let todo_el = document.createElement("div")
+            todo_el.setAttribute('class', 'todo-deadline')
+            todo_el.textContent = element.input_deadline
+
+            todocard.appendChild(id_el)
+            todocard.appendChild(title_el)
+            todocard.appendChild(todo_el)
+
+            cnt.appendChild(todocard);
         });
-        cnt.innerHTML = content;
+        
         console.log(cnt.children)
         for(let element of cnt.children){
             element.addEventListener('click', () => killmeplz(element["id"]))
         }
         return;
     }
-    cnt.innerHTML = "<h1>Кажется, дел больше нет...</h1>"
+    let empty_header = document.createElement("h1")
+    empty_header.textContent = 'Кажется, дел больше нет...'
+    cnt.appendChild(empty_header)
 }
 
 function killmeplz(id){
