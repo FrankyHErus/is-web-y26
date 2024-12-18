@@ -50,13 +50,14 @@ window.addEventListener('load', () => {
 
         cnt.appendChild(error_div)
 
+        // Использую библиотеку Noty.js
         new Noty({
-          type: 'error',
-          text: `Произошла ошибка: ${ex.message}`, 
-          timeout: 5000,
-          progressBar: true,
-          position: "right-bottom"
-        }).show();
+          type: 'error', // Тип уведомления
+          text: `Произошла ошибка: ${ex.message}`, // Текст уведомления
+          timeout: 5000, // Время жизни уведомления
+          progressBar: true, // Будет ли показан прогрессбар
+          position: "right-bottom" // Позиция уведомления
+        }).show(); // Функция вызова отображения уведомления
       })
     }
 )
