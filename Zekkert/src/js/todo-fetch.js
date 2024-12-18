@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
 
     const cnt = document.getElementById('todo-result__container')
 
-    fetch('https://jsonplaceholder.typicode.com/todos/')
+    fetch('https://jsonplaceh123older.typicode.com/todos/')
       .then(response => response.json())
       .then(json => {
         const arr = json.filter((x) => x['id'] % Math.floor(Math.random() * 10) == 0).slice(0, 5)
@@ -49,6 +49,14 @@ window.addEventListener('load', () => {
         error_div.appendChild(sad_msg)
 
         cnt.appendChild(error_div)
+
+        new Noty({
+          type: 'error',
+          text: `Произошла ошибка: ${ex.message}`, 
+          timeout: 5000,
+          progressBar: true,
+          position: "right-bottom"
+        }).show();
       })
     }
 )
